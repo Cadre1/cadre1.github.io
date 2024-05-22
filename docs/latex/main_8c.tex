@@ -1,0 +1,148 @@
+\doxysection{Core/\+Src/main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{Core/Src/main.c@{Core/Src/main.c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include "{}main.\+h"{}}\newline
+{\ttfamily \#include "{}motor\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include "{}radio\+\_\+reciever\+\_\+driver.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+\Hypertarget{main_8c_a563fdd3e97773f7301a62b3b30f3e3e7}\label{main_8c_a563fdd3e97773f7301a62b3b30f3e3e7} 
+int32\+\_\+t {\bfseries pulse\+\_\+to\+\_\+\+PWM} (Radio\+Reciever\+\_\+\+Driver\+Type\+Def \texorpdfstring{$\ast$}{*}rad)
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+\Hypertarget{main_8c_a77a2401a35ddd9bd0b8fc28331b81381}\label{main_8c_a77a2401a35ddd9bd0b8fc28331b81381} 
+void {\bfseries HAL\+\_\+\+TIM\+\_\+\+IC\+\_\+\+Capture\+Callback} (TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim)
+\item 
+void \mbox{\hyperlink{main_8c_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_a2c80fd5510e2990a59a5c90d745c716c}\label{main_8c_a2c80fd5510e2990a59a5c90d745c716c} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim2}
+\item 
+\Hypertarget{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62}\label{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim3}
+\item 
+\Hypertarget{main_8c_a85788cec5a97ee377e4ee2e74f026484}\label{main_8c_a85788cec5a97ee377e4ee2e74f026484} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim4}
+\item 
+\Hypertarget{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}\label{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5} 
+UART\+\_\+\+Handle\+Type\+Def {\bfseries huart1}
+\item 
+\Hypertarget{main_8c_ab6abe62dc03b3fc3abaff081b0f33d65}\label{main_8c_ab6abe62dc03b3fc3abaff081b0f33d65} 
+int32\+\_\+t {\bfseries pulse} = 4799
+\item 
+\Hypertarget{main_8c_a5def2a8c335486b4e3aefb6c7ac629d5}\label{main_8c_a5def2a8c335486b4e3aefb6c7ac629d5} 
+uint16\+\_\+t {\bfseries pulse\+\_\+rad} = 0
+\item 
+\Hypertarget{main_8c_a34d311c8962b43861968085716cf3318}\label{main_8c_a34d311c8962b43861968085716cf3318} 
+int32\+\_\+t {\bfseries duty\+\_\+percent}
+\item 
+\Hypertarget{main_8c_ad5c6c1b96f2bd5780356b732a48f6b23}\label{main_8c_ad5c6c1b96f2bd5780356b732a48f6b23} 
+int32\+\_\+t {\bfseries duty\+\_\+percent1}
+\item 
+\Hypertarget{main_8c_a028eceb5d560ff7aadaa034b54f1db30}\label{main_8c_a028eceb5d560ff7aadaa034b54f1db30} 
+int32\+\_\+t {\bfseries duty\+\_\+percent2}
+\item 
+\Hypertarget{main_8c_a58e706e828045a3b1894b6bf8ebc4f5d}\label{main_8c_a58e706e828045a3b1894b6bf8ebc4f5d} 
+int32\+\_\+t {\bfseries duty\+\_\+count}
+\item 
+\Hypertarget{main_8c_ac5c27292820bc946fca263be49756c4b}\label{main_8c_ac5c27292820bc946fca263be49756c4b} 
+int32\+\_\+t {\bfseries duty\+\_\+count1}
+\item 
+\Hypertarget{main_8c_af7736b8b520b2d8897eda2265d599cf7}\label{main_8c_af7736b8b520b2d8897eda2265d599cf7} 
+int32\+\_\+t {\bfseries duty\+\_\+count2}
+\item 
+\Hypertarget{main_8c_a513c12b97391e9c4b9684b5456a71b46}\label{main_8c_a513c12b97391e9c4b9684b5456a71b46} 
+uint8\+\_\+t {\bfseries mot\+\_\+num}
+\item 
+\Hypertarget{main_8c_a7dff167b310b78ffe12f03656aebc01e}\label{main_8c_a7dff167b310b78ffe12f03656aebc01e} 
+uint32\+\_\+t {\bfseries prev\+\_\+time}
+\item 
+\Hypertarget{main_8c_a1df41bd38e38f416a1af4fd1531d3588}\label{main_8c_a1df41bd38e38f416a1af4fd1531d3588} 
+uint32\+\_\+t {\bfseries curr\+\_\+time}
+\item 
+\Hypertarget{main_8c_a74dfcd4671ed098e70057fb9925c8376}\label{main_8c_a74dfcd4671ed098e70057fb9925c8376} 
+char {\bfseries my\+\_\+message} \mbox{[}200\mbox{]}
+\item 
+\Hypertarget{main_8c_a53c8d8d1fabc28502fd546608cc4c4c0}\label{main_8c_a53c8d8d1fabc28502fd546608cc4c4c0} 
+TIM\+\_\+\+Handle\+Type\+Def {\bfseries htim\+\_\+cb}
+\item 
+\Hypertarget{main_8c_a1b8b7bfcd8a39725ae1cb8ce243bc927}\label{main_8c_a1b8b7bfcd8a39725ae1cb8ce243bc927} 
+uint8\+\_\+t {\bfseries edge\+\_\+flag} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Main program body 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2024 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a1730ffe1e560465665eb47d9264826f9}\label{main_8c_a1730ffe1e560465665eb47d9264826f9} 
+\index{main.c@{main.c}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em int} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920} 
+\index{main.c@{main.c}!SystemClock\_Config@{SystemClock\_Config}}
+\index{SystemClock\_Config@{SystemClock\_Config}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{SystemClock\_Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Configure the main internal regulator output voltage
+
+Initializes the RCC Oscillators according to the specified parameters in the RCC\+\_\+\+Osc\+Init\+Type\+Def structure.
+
+Initializes the CPU, AHB and APB buses clocks
