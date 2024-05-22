@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HW04: File Members</title>
+<title>HW04: Core/Src/motor_driver.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,7 +67,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('globals_func.html',''); initResizable(); });
+$(function(){initNavTree('motor__driver_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,37 +92,41 @@ $(function(){initNavTree('globals_func.html',''); initResizable(); });
 </div>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">motor_driver.c File Reference</div></div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions with links to the documentation:</div><ul>
-<li>_sbrk()&#160;:&#160;<a class="el" href="sysmem_8c.html#a68125648bcce70b6bb3aa0be50e99700">sysmem.c</a></li>
-<li>BusFault_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3">stm32f4xx_it.c</a></li>
-<li>DebugMon_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#adbdfb05858cc36fc520974df37ec3cb0">stm32f4xx_it.c</a></li>
-<li>Error_Handler()&#160;:&#160;<a class="el" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">main.c</a></li>
-<li>HAL_MspInit()&#160;:&#160;<a class="el" href="stm32f4xx__hal__msp_8c.html#ae4fb8e66865c87d0ebab74a726a6891f">stm32f4xx_hal_msp.c</a></li>
-<li>HAL_TIM_Base_MspDeInit()&#160;:&#160;<a class="el" href="stm32f4xx__hal__msp_8c.html#a555b8a2d3c7a07341f8cb1255318fa2b">stm32f4xx_hal_msp.c</a></li>
-<li>HAL_TIM_Base_MspInit()&#160;:&#160;<a class="el" href="stm32f4xx__hal__msp_8c.html#abb25ade2f7e3f7aae167bd52270c2b86">stm32f4xx_hal_msp.c</a></li>
-<li>HAL_TIM_MspPostInit()&#160;:&#160;<a class="el" href="stm32f4xx__hal__msp_8c.html#ae70bce6c39d0b570a7523b86738cec4b">stm32f4xx_hal_msp.c</a></li>
-<li>HAL_UART_MspDeInit()&#160;:&#160;<a class="el" href="stm32f4xx__hal__msp_8c.html#a718f39804e3b910d738a0e1e46151188">stm32f4xx_hal_msp.c</a></li>
-<li>HAL_UART_MspInit()&#160;:&#160;<a class="el" href="stm32f4xx__hal__msp_8c.html#a0e553b32211877322f949b14801bbfa7">stm32f4xx_hal_msp.c</a></li>
-<li>HardFault_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea">stm32f4xx_it.c</a></li>
-<li>main()&#160;:&#160;<a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a></li>
-<li>MemManage_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a3150f74512510287a942624aa9b44cc5">stm32f4xx_it.c</a></li>
-<li>NMI_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a6ad7a5e3ee69cb6db6a6b9111ba898bc">stm32f4xx_it.c</a></li>
-<li>PendSV_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a6303e1f258cbdc1f970ce579cc015623">stm32f4xx_it.c</a></li>
-<li>SVC_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a3e5ddb3df0d62f2dc357e64a3f04a6ce">stm32f4xx_it.c</a></li>
-<li>SystemClock_Config()&#160;:&#160;<a class="el" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">main.c</a></li>
-<li>SystemCoreClockUpdate()&#160;:&#160;<a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f">system_stm32f4xx.c</a></li>
-<li>SystemInit()&#160;:&#160;<a class="el" href="group___s_t_m32_f4xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2">system_stm32f4xx.c</a></li>
-<li>SysTick_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#ab5e09814056d617c521549e542639b7e">stm32f4xx_it.c</a></li>
-<li>TIM3_IRQHandler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#ac8e51d2183b5230cbd5481f8867adce9">stm32f4xx_it.c</a></li>
-<li>TIM4_IRQHandler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a7133f3f78767503641d307386e68bd28">stm32f4xx_it.c</a></li>
-<li>UsageFault_Handler()&#160;:&#160;<a class="el" href="stm32f4xx__it_8c.html#a1d98923de2ed6b7309b66f9ba2971647">stm32f4xx_it.c</a></li>
-</ul>
-</div><!-- contents -->
+
+<p>: Motor Driver program body  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;motor_driver.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2dcb2ee9e5cfc3ba9edab3ed74489777" id="r_a2dcb2ee9e5cfc3ba9edab3ed74489777"><td class="memItemLeft" align="right" valign="top"><a id="a2dcb2ee9e5cfc3ba9edab3ed74489777" name="a2dcb2ee9e5cfc3ba9edab3ed74489777"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enable_mot</b> (Motor_DriverTypeDef *mot, uint32_t motor_num)</td></tr>
+<tr class="separator:a2dcb2ee9e5cfc3ba9edab3ed74489777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f61518c05b329b8e2bbb8ece5c68b0" id="r_ab8f61518c05b329b8e2bbb8ece5c68b0"><td class="memItemLeft" align="right" valign="top"><a id="ab8f61518c05b329b8e2bbb8ece5c68b0" name="ab8f61518c05b329b8e2bbb8ece5c68b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disable_mot</b> (Motor_DriverTypeDef *mot, uint32_t motor_num)</td></tr>
+<tr class="separator:ab8f61518c05b329b8e2bbb8ece5c68b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711a8a03431defe3359e52358d664176" id="r_a711a8a03431defe3359e52358d664176"><td class="memItemLeft" align="right" valign="top"><a id="a711a8a03431defe3359e52358d664176" name="a711a8a03431defe3359e52358d664176"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_PWM_percent</b> (Motor_DriverTypeDef *mot, uint32_t motor_num, int32_t duty_cycle)</td></tr>
+<tr class="separator:a711a8a03431defe3359e52358d664176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8045a15c65c9269be5fb1a45ff813e9e" id="r_a8045a15c65c9269be5fb1a45ff813e9e"><td class="memItemLeft" align="right" valign="top"><a id="a8045a15c65c9269be5fb1a45ff813e9e" name="a8045a15c65c9269be5fb1a45ff813e9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_PWM</b> (Motor_DriverTypeDef *mot, uint32_t motor_num, int32_t duty_count)</td></tr>
+<tr class="separator:a8045a15c65c9269be5fb1a45ff813e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>: Motor Driver program body </p>
+<p>Author: Christopher Ng Updated: 5/22/24 </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a class="el" href="motor__driver_8c.html">motor_driver.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
