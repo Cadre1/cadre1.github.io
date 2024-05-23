@@ -1,0 +1,36 @@
+\doxysection{Core/\+Inc/motor\+\_\+driver.h File Reference}
+\hypertarget{motor__driver_8h}{}\label{motor__driver_8h}\index{Core/Inc/motor\_driver.h@{Core/Inc/motor\_driver.h}}
+
+
+\+: Motor Driver program header  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_motor___driver_type_def}{Motor\+\_\+\+Driver\+Type\+Def}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{motor__driver_8h_a2dcb2ee9e5cfc3ba9edab3ed74489777}\label{motor__driver_8h_a2dcb2ee9e5cfc3ba9edab3ed74489777} 
+void {\bfseries enable\+\_\+mot} (\mbox{\hyperlink{struct_motor___driver_type_def}{Motor\+\_\+\+Driver\+Type\+Def}} \texorpdfstring{$\ast$}{*}mot, uint32\+\_\+t motor\+\_\+num)
+\item 
+\Hypertarget{motor__driver_8h_ab8f61518c05b329b8e2bbb8ece5c68b0}\label{motor__driver_8h_ab8f61518c05b329b8e2bbb8ece5c68b0} 
+void {\bfseries disable\+\_\+mot} (\mbox{\hyperlink{struct_motor___driver_type_def}{Motor\+\_\+\+Driver\+Type\+Def}} \texorpdfstring{$\ast$}{*}mot, uint32\+\_\+t motor\+\_\+num)
+\item 
+\Hypertarget{motor__driver_8h_a711a8a03431defe3359e52358d664176}\label{motor__driver_8h_a711a8a03431defe3359e52358d664176} 
+void {\bfseries set\+\_\+\+PWM\+\_\+percent} (\mbox{\hyperlink{struct_motor___driver_type_def}{Motor\+\_\+\+Driver\+Type\+Def}} \texorpdfstring{$\ast$}{*}mot, uint32\+\_\+t motor\+\_\+num, int32\+\_\+t duty\+\_\+cycle)
+\item 
+\Hypertarget{motor__driver_8h_a8045a15c65c9269be5fb1a45ff813e9e}\label{motor__driver_8h_a8045a15c65c9269be5fb1a45ff813e9e} 
+void {\bfseries set\+\_\+\+PWM} (\mbox{\hyperlink{struct_motor___driver_type_def}{Motor\+\_\+\+Driver\+Type\+Def}} \texorpdfstring{$\ast$}{*}mot, uint32\+\_\+t motor\+\_\+num, int32\+\_\+t duty\+\_\+count)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Motor Driver program header 
+
+Author\+: Christopher Ng Updated\+: 5/22/24 
